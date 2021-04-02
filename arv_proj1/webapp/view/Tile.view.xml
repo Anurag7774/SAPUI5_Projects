@@ -1,0 +1,18 @@
+<mvc:View
+    controllerName="com.arv.arvproj1.controller.Tile"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+>
+	<Page id ="Tile" showHeader="false">
+		<l:VerticalLayout>
+			<l:HorizontalLayout content="{tile>/}" allowWrapping="true" >
+				<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+				header="{tile>title}" 
+				press="press(${tile>route})">
+				</GenericTile>
+			</l:HorizontalLayout>
+		</l:VerticalLayout>
+	</Page>
+</mvc:View>
